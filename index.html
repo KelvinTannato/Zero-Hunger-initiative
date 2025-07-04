@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Hunger - Donasi Makanan</title>
+    <link rel="icon" href="images/favicon.png" type="image/png"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Zero Hunger Initiative</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="product-catalog.html">Donasi Makanan</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li id="nav-login" style="display:none;"><a href="login.html">Login</a></li>
+                    <li id="nav-register" style="display:none;"><a href="register.html">Daftar</a></li>
+                    <li id="nav-logout" style="display:none;"><a href="#" id="logout-btn">Logout</a></li>
+                    <li id="nav-balance" style="display:none;">
+                        <span class="balance-display">Saldo Anda: <strong id="header-balance">Rp 0</strong></span>
+                        <button id="header-topup-btn" class="btn-topup-inline">Top Up</button>
+                    </li>
+                    <li><a href="cart.html" class="cart-icon">Keranjang (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Bantu Wujudkan Dunia Tanpa Kelaparan</h2>
+                <p>Setiap donasi Anda berarti bagi mereka yang membutuhkan. Mari bersama, beraksi untuk SDG 2.</p>
+                <a href="product-catalog.html" class="btn btn-primary">Mulai Berdonasi Sekarang</a>
+            </div>
+        </section>
+
+        <section id="about-sdg2" class="info-section">
+            <div class="container">
+                <h2>Apa Itu SDG 2: Zero Hunger?</h2>
+                <p>Tujuan Pembangunan Berkelanjutan (SDG) 2 berfokus pada pengakhiran kelaparan, mencapai ketahanan pangan, meningkatkan gizi, dan mempromosikan pertanian berkelanjutan. Ini adalah salah satu pilar utama untuk membangun masa depan yang lebih baik bagi semua.</p>
+                <p>Meskipun kemajuan telah dicapai, jutaan orang masih menderita kelaparan dan kekurangan gizi. Melalui donasi dan dukungan terhadap sistem pangan yang berkelanjutan, kita dapat membuat perubahan nyata.</p>
+                <a href="about.html" class="btn btn-secondary">Pelajari Lebih Lanjut</a>
+            </div>
+        </section>
+
+        <section id="our-mission" class="content-block mission-block">
+            <div class="container">
+                <div class="content-flex">
+                    <div class="content-text">
+                        <h2>Misi Kami: Menjembatani Kesenjangan Pangan</h2>
+                        <p>Kami percaya bahwa akses terhadap makanan adalah hak asasi manusia. Misi kami adalah menciptakan platform yang mudah diakses bagi siapa saja untuk berdonasi makanan, menghubungkan kebaikan hati donatur dengan mereka yang paling membutuhkan.</p>
+                        <p>Melalui sistem donasi yang transparan dan efisien, kami berupaya mengurangi pemborosan makanan dan memastikan setiap makanan yang didonasikan dapat mencapai tangan yang tepat, di waktu yang tepat.</p>
+                    </div>
+                    <div class="content-image">
+                        <img src="images/our-mission.jpg" alt="Misi Kami">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="content-block impact-block">
+            <div class="container">
+                <div class="content-flex reverse-order">
+                    <div class="content-image">
+                        <img src="images/impact.jpg" alt="Dampak Donasi">
+                    </div>
+                    <div class="content-text">
+                        <h2>Dampak Donasi Anda</h2>
+                        <ul>
+                            <li>Makanan bergizi untuk keluarga rentan.</li>
+                            <li>Bantuan darurat bagi korban bencana.</li>
+                            <li>Dukungan untuk program ketahanan pangan lokal.</li>
+                            <li>Harapan dan semangat bagi mereka yang berjuang melawan kelaparan.</li>
+                        </ul>
+                        <p>Setiap Rupiah yang Anda donasikan untuk membeli makanan, langsung berdampak pada kehidupan nyata. Bersama, kita bisa membangun masa depan yang lebih cerah dan sehat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-help" class="info-section">
+            <div class="container">
+                <h2>Bagaimana Anda Dapat Membantu?</h2>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <div class="step-icon">&#128176;</div>
+                        <h3>1. Pilih Donasi</h3>
+                        <p>Jelajahi katalog kami dan pilih bahan makanan atau makanan siap saji yang ingin Anda donasikan, layaknya berbelanja online.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-icon">&#128717;</div>
+                        <h3>2. Tambahkan ke Keranjang</h3>
+                        <p>Tambahkan pilihan Anda ke keranjang donasi. Anda dapat menyesuaikan kuantitas sesuai keinginan.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-icon">&#128179;</div>
+                        <h3>3. Lanjutkan Pembayaran</h3>
+                        <p>Login ke akun Anda dan lakukan pembayaran simulasi dengan saldo virtual. Mudah dan cepat!</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-icon">&#128150;</div>
+                        <h3>4. Buat Perubahan</h3>
+                        <p>Donasi Anda akan segera diproses dan disalurkan kepada mereka yang membutuhkan. Anda telah membuat perbedaan!</p>
+                    </div>
+                </div>
+                <a href="product-catalog.html" class="btn btn-primary">Mulai Donasi Sekarang</a>
+            </div>
+        </section>
+
+        <section id="featured-items" class="product-section">
+            <div class="container">
+                <h2>Donasi Populer</h2>
+                <div class="product-grid">
+                    <div class="product-item" data-id="beras" data-name="Beras 5kg" data-price="60000" data-img="images/bahan/beras.jpg">
+                        <img src="images/bahan/beras.jpg" alt="Beras 5kg">
+                        <h3>Beras 5kg</h3>
+                        <p class="price">Rp 60.000</p>
+                        <button class="add-to-cart">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="product-item" data-id="nasikotak" data-name="Nasi Kotak Lengkap" data-price="25000" data-img="images/siap-saji/nasikotak.jpg">
+                        <img src="images/siap-saji/nasikotak.jpg" alt="Nasi Kotak Lengkap">
+                        <h3>Nasi Kotak Lengkap</h3>
+                        <p class="price">Rp 25.000</p>
+                        <button class="add-to-cart">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="product-item" data-id="minyak" data-name="Minyak Goreng 2L" data-price="35000" data-img="images/bahan/minyak.jpg">
+                        <img src="images/bahan/minyak.jpg" alt="Minyak Goreng 2L">
+                        <h3>Minyak Goreng 2L</h3>
+                        <p class="price">Rp 35.000</p>
+                        <button class="add-to-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="product-catalog.html" class="btn btn-primary">Lihat Semua Pilihan Donasi</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zero Hunger Initiative. Web ini dibuat oleh kelompok Semoga Lulus.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

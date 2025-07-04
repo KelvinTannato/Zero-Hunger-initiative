@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Donasi - Zero Hunger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Zero Hunger Initiative</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="product-catalog.html">Donasi Makanan</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li id="nav-login"><a href="login.html">Login</a></li>
+                    <li id="nav-register"><a href="register.html">Daftar</a></li>
+                    <li id="nav-logout" style="display:none;"><a href="#" id="logout-btn">Logout</a></li>
+                    <li id="nav-balance" style="display:none;">
+                        <span class="balance-display">Saldo Anda: <strong id="header-balance">Rp 0</strong></span>
+                        <button id="header-topup-btn" class="btn-topup-inline">Top Up</button>
+                    </li>
+                    <li><a href="cart.html" class="cart-icon">Keranjang (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="cart-summary" class="info-section">
+            <div class="container">
+                <h2>Keranjang Donasi Anda</h2>
+                <div id="cart-items-container">
+                    <table id="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Gambar</th>
+                                <th>Nama Item</th>
+                                <th>Harga Satuan</th>
+                                <th>Kuantitas</th>
+                                <th>Subtotal</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" class="text-right"><strong>Total Donasi:</strong></td>
+                                <td colspan="2"><strong id="cart-total-price">Rp 0</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div id="empty-cart-message" style="display: none; text-align: center;">
+                    <p>Keranjang donasi Anda kosong. Mari <a href="product-catalog.html">mulai berdonasi!</a></p>
+                </div>
+                <div class="cart-actions">
+                    <a href="product-catalog.html" class="btn btn-secondary">Lanjutkan Donasi</a>
+                    <button id="checkout-btn" class="btn btn-primary">Lanjutkan Pembayaran</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zero Hunger Initiative. Web ini dibuat oleh kelompok Semoga Lulus.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

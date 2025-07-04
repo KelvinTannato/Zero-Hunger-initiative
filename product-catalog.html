@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-F-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasi Makanan - Zero Hunger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Zero Hunger Initiative</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="product-catalog.html">Donasi Makanan</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li id="nav-login"><a href="login.html">Login</a></li>
+                    <li id="nav-register"><a href="register.html">Daftar</a></li>
+                    <li id="nav-logout" style="display:none;"><a href="#" id="logout-btn">Logout</a></li>
+                    <li id="nav-balance" style="display:none;">
+                        <span class="balance-display">Saldo Anda: <strong id="header-balance">Rp 0</strong></span>
+                        <button id="header-topup-btn" class="btn-topup-inline">Top Up</button>
+                    </li>
+                    <li><a href="cart.html" class="cart-icon">Keranjang (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="catalog" class="product-section">
+            <div class="container">
+                <h2>Pilih Makanan untuk Donasi</h2>
+
+                <section id="bahan-makanan">
+                    <h3>Bahan Makanan</h3>
+                    <div class="product-grid">
+                        <div class="product-item" data-id="beras" data-name="Beras 5kg" data-price="60000" data-img="images/bahan/beras.jpg">
+                            <img src="images/bahan/beras.jpg" alt="Beras 5kg">
+                            <h3>Beras 5kg</h3>
+                            <p class="price">Rp 60.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="minyak" data-name="Minyak Goreng 2L" data-price="35000" data-img="images/bahan/minyak.jpg">
+                            <img src="images/bahan/minyak.jpg" alt="Minyak Goreng 2L">
+                            <h3>Minyak Goreng 2L</h3>
+                            <p class="price">Rp 35.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="gula" data-name="Gula Pasir 1kg" data-price="18000" data-img="images/bahan/gula.jpg">
+                            <img src="images/bahan/gula.jpg" alt="Gula Pasir 1kg">
+                            <h3>Gula Pasir 1kg</h3>
+                            <p class="price">Rp 18.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="mie-instan" data-name="Mie Instan (5 pcs)" data-price="15000" data-img="images/bahan/mie-instan.jpg">
+                            <img src="images/bahan/mie-instan.jpg" alt="Mie Instan (5 pcs)">
+                            <h3>Mie Instan (5 pcs)</h3>
+                            <p class="price">Rp 15.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="telur" data-name="Telur Ayam (10 butir)" data-price="25000" data-img="images/bahan/telur.jpg">
+                            <img src="images/bahan/telur.jpg" alt="Telur Ayam (10 butir)">
+                            <h3>Telur Ayam (10 butir)</h3>
+                            <p class="price">Rp 25.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="sayuran" data-name="Paket Sayuran Segar" data-price="20000" data-img="images/bahan/sayuran.jpg">
+                            <img src="images/bahan/sayuran.jpg" alt="Paket Sayuran Segar">
+                            <h3>Paket Sayuran Segar</h3>
+                            <p class="price">Rp 20.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="buah" data-name="Paket Buah-buahan" data-price="30000" data-img="images/bahan/buah-buahan.jpg">
+                            <img src="images/bahan/buah-buahan.jpg" alt="Paket Buah-buahan">
+                            <h3>Paket Buah-buahan</h3>
+                            <p class="price">Rp 30.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="garam" data-name="Garam Beryodium 500g" data-price="5000" data-img="images/bahan/garam.jpg">
+                            <img src="images/bahan/garam.jpg" alt="Garam Beryodium 500g">
+                            <h3>Garam Beryodium 500g</h3>
+                            <p class="price">Rp 5.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="kopi" data-name="Kopi Bubuk 200g" data-price="12000" data-img="images/bahan/kopi.jpg">
+                            <img src="images/bahan/kopi.jpg" alt="Kopi Bubuk 200g">
+                            <h3>Kopi Bubuk 200g</h3>
+                            <p class="price">Rp 12.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="teh" data-name="Teh Celup (25 kantong)" data-price="10000" data-img="images/bahan/teh.jpg">
+                            <img src="images/bahan/teh.jpg" alt="Teh Celup (25 kantong)">
+                            <h3>Teh Celup (25 kantong)</h3>
+                            <p class="price">Rp 10.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="makanan-siap-saji">
+                    <h3>Makanan Siap Saji</h3>
+                    <div class="product-grid">
+                        <div class="product-item" data-id="nasikotak" data-name="Nasi Kotak Lengkap" data-price="25000" data-img="images/siap-saji/nasikotak.jpg">
+                            <img src="images/siap-saji/nasikotak.jpg" alt="Nasi Kotak Lengkap">
+                            <h3>Nasi Kotak Lengkap</h3>
+                            <p class="price">Rp 25.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="roti" data-name="Roti Tawar" data-price="12000" data-img="images/siap-saji/roti.jpg">
+                            <img src="images/siap-saji/roti.jpg" alt="Roti Tawar">
+                            <h3>Roti Tawar</h3>
+                            <p class="price">Rp 12.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="lauk-pauk" data-name="Paket Lauk Pauk" data-price="18000" data-img="images/siap-saji/lauk-pauk.jpg">
+                            <img src="images/siap-saji/lauk-pauk.jpg" alt="Paket Lauk Pauk">
+                            <h3>Paket Lauk Pauk</h3>
+                            <p class="price">Rp 18.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="bubur" data-name="Bubur Ayam" data-price="15000" data-img="images/siap-saji/bubur.jpg">
+                            <img src="images/siap-saji/bubur.jpg" alt="Bubur Ayam">
+                            <h3>Bubur Ayam</h3>
+                            <p class="price">Rp 15.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="kue" data-name="Paket Kue Tradisional" data-price="20000" data-img="images/siap-saji/kue.jpg">
+                            <img src="images/siap-saji/kue.jpg" alt="Paket Kue Tradisional">
+                            <h3>Paket Kue Tradisional</h3>
+                            <p class="price">Rp 20.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="air-mineral" data-name="Air Mineral (6 botol)" data-price="10000" data-img="images/siap-saji/air-mineral.jpg">
+                            <img src="images/siap-saji/air-mineral.jpg" alt="Air Mineral (6 botol)">
+                            <h3>Air Mineral (6 botol)</h3>
+                            <p class="price">Rp 10.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="susu" data-name="Susu UHT (1L)" data-price="16000" data-img="images/siap-saji/susu-uht.jpg">
+                            <img src="images/siap-saji/susu-uht.jpg" alt="Susu UHT (1L)">
+                            <h3>Susu UHT (1L)</h3>
+                            <p class="price">Rp 16.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="sereal" data-name="Sereal Kemasan" data-price="14000" data-img="images/siap-saji/sereal.jpg">
+                            <img src="images/siap-saji/sereal.jpg" alt="Sereal Kemasan">
+                            <h3>Sereal Kemasan</h3>
+                            <p class="price">Rp 14.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="sarden" data-name="Sarden Kalengan" data-price="13000" data-img="images/siap-saji/sarden.jpg">
+                            <img src="images/siap-saji/sarden.jpg" alt="Sarden Kalengan">
+                            <h3>Sarden Kalengan</h3>
+                            <p class="price">Rp 13.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                        <div class="product-item" data-id="biskuit" data-name="Paket Biskuit" data-price="10000" data-img="images/siap-saji/biskuit.jpg">
+                            <img src="images/siap-saji/biskuit.jpg" alt="Paket Biskuit">
+                            <h3>Paket Biskuit</h3>
+                            <p class="price">Rp 10.000</p>
+                            <button class="add-to-cart">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zero Hunger Initiative. Web ini dibuat oleh kelompok Semoga Lulus.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
